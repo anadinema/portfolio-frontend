@@ -1,0 +1,11 @@
+<div class="terminal">
+	@if (!isClearCalled) {
+	<app-banner></app-banner>
+	}
+	<div class="command-line">
+		<span
+			>{{ prompt }}<br />
+			&gt; <input type="text" (onchange)="setInput($event)" (onkeydown)="getKeyPress($event)"
+		/></span>
+	</div>
+</div>
